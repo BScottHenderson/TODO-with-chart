@@ -1,32 +1,37 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang='en'>
   <head>
-    <meta charset="utf-8">
+    <meta charset='utf-8'>
     <title>Assignment 2</title>
 
-    <link rel="stylesheet" type="text/css" href="./css/default.css" />
+    <link rel='stylesheet' type='text/css' href='./css/default.css' />
+
+    <!--Load the AJAX API-->
+    <script type='text/javascript' src='https://www.gstatic.com/charts/loader.js'></script>
+
+    <!--local JavaScript-->
+    <script src='./js/default.js'></script>
   </head>
   <body>
-    <ul id="task-list">
-    </ul>
 
-    <form id="task-form" name="task-form">
+    <ul id='task-list'></ul>
+    <div id='task-chart'></div>
+
+    <form id='task-form' name='task-form'>
       <label>Description:
-        <input type="text" name="description">
+        <input type='text' name='description'>
       </label>
-      <fieldset id="assignee">
+      <fieldset id='assignee'>
         <legend>Assigned to:</legend>
       </fieldset>
       <label>Difficulty:
-        <select name="difficulty">
-          <option value="easy" selected>Easy</option>
-          <option value="medium">Medium</option>
-          <option value="hard">Hard</option>
+        <select name='difficulty'>
+          <option value='easy' selected>Easy</option>
+          <option value='medium'>Medium</option>
+          <option value='hard'>Hard</option>
         </select>
       </label>
-      <input type="submit" value="Add Task" />
+      <input type='submit' value='Add Task' />
     </form>
-
-    <script src="./js/default.js"></script>
   </body>
 </html>
