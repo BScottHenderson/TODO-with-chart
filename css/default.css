@@ -13,7 +13,7 @@ form {
   width: 90%;
 }
 label:after {
-  content: "";
+  content: '';
   display: table;
   margin-bottom: 1rem;
 }
