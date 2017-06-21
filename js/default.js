@@ -102,7 +102,7 @@ function drawTaskChart() {
   data.addColumn('number', 'Hard');
 
   for (var [key, value] of taskMap) {
-    data.addRow([key, value.easy, value.medium, value.hdard]);
+    data.addRow([key, value.easy, value.medium, value.hard]);
   }
 
   // Chart options.
