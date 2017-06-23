@@ -107,6 +107,7 @@ function drawTaskChart() {
 
   // Chart options.
   let options = {
+    title: 'Task Difficulty Percentage',
     width: document.querySelector('form').offsetWidth,
     height: 350,
     legend: { position: 'top', maxLines: 3 },
